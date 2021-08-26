@@ -1,0 +1,306 @@
+/*  FONTS
+ font-family: 'Open Sans', sans-serif;
+ font-family: 'Roboto', sans-serif;
+ font-family: 'Oswald', sans-serif;
+ font-family: 'Merriweather', serif;
+ font-family: 'Montserrat', sans-serif;
+ font-family: 'Titillium Web', sans-serif;
+ font-family: 'PT Sans', sans-serif;
+*/
+
+// Colors
+$clr-01:#f2f2f2;
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Gemera; Styling
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+// Uitlities
+.btn {
+    text-decoration: none;
+    border: 1px solid #000;
+    padding: .7rem 2rem;
+    font-size: .875rem;
+    color: #000;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 2rem 0;
+}
+
+// Hero
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    background: $clr-01;
+}
+
+// head
+.head {
+    text-align: center;
+    padding: 4em;
+    font-size: .6rem;
+    h1 {
+        font-size: 4.5em;
+        font-weight: 400;
+        line-height: 1.2;
+        max-width: 43.87rem;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:40em) {
+    .head {
+        .head {
+            font-size: 1rem;
+        }
+    }
+}
+
+.hero-bg {
+    max-width: 71.25rem;
+    margin: 0 auto;
+    background: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 10rem 0;
+}
+
+.hero {
+    .columns {
+        padding: 2rem;
+        .img-container {}
+        .col-1 {}
+        .col-2 {
+            background: white;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        .text-content {
+            h5 {
+                font-size: 1.25rem;
+                line-height: 1.6;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+.hero {
+    .columns__2 {
+        .col-1 {
+            padding: 1rem;
+            border: none !important;
+        }
+        .col-2 {
+            padding: 0;
+        }
+        .text-content {
+            text-align: center;
+            h2 {
+                font-size: 3em;
+                line-height: 1;
+            }
+            p {
+                font-size: 1em;
+                line-height: 1.6;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+// Services
+.services {
+    padding: 2rem;
+    background: #000;
+    color: white;
+    .service-headings {
+        text-align: center;
+        h5 {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            margin-top: 1rem;
+        }
+        h2 {
+            font-size: 2.25em;
+            line-height: 1;
+        }
+        p {
+            font-size: 1em;
+            line-height: 1.6;
+            margin-top: 1rem;
+        }
+    }
+    .card-container {
+        padding: 3rem 0;
+    }
+    .card {
+        padding: 1.5rem;
+        h2 {
+            font-size: 1.875em;
+            margin-top: 1.5rem;
+            line-height: 1.2;
+        }
+        p {
+            margin-top: 1.25rem;
+        }
+        .icon {
+            width: fit-content;
+            margin: 0 auto;
+        }
+        text-align: center;
+    }
+}
+
+// service2
+.service2 {
+    .columns {
+        .content {
+            padding: 1rem 1rem;
+            .icon {
+                width: fit-content;
+                margin: 0 auto;
+            }
+            text-align: center;
+            h5 {
+                font-size: 1.25em;
+                margin-top: 1.25rem;
+            }
+            p {
+                font-size: 1em;
+                margin-top: 1.25rem;
+                line-height: 1.6;
+            }
+        }
+        .sub-content {
+            padding: 2rem 1rem;
+            .icon {
+                width: fit-content;
+                margin: 0 auto;
+            }
+            h5 {
+                font-size: 1.25em;
+                margin-top: 1.25rem;
+            }
+            text-align: center;
+        }
+    }
+}
+
+// Recent Projects
+.recent-projects {
+    .headings {
+        text-align: center;
+        background: #000;
+        color: white;
+        padding: 3rem 1rem;
+        h5 {
+            font-size: 1.25em;
+        }
+        h2 {
+            font-size: 2.25em;
+            margin-top: 1.25rem;
+        }
+    }
+}
+
+// map
+.map {
+    background: white;
+    .columns {
+        padding: 2rem 0;
+        .col-1 {
+            padding: 2rem;
+        }
+        .img-content {}
+        .text-content {
+            padding: 2rem;
+            text-align: center;
+            h5 {
+                font-size: 1.25em;
+            }
+            h2 {
+                font-size: 2.25em;
+                margin-top: 1.25rem;
+                line-height: 1.2;
+            }
+            p {
+                font-size: 1em;
+                line-height: 1.6;
+                margin-top: 1.875rem;
+            }
+        }
+    }
+}
+
+// contact
+.contact {
+    background: #000;
+    color: white;
+    padding: 4rem 0rem;
+    .columns {
+        .col {
+            padding: 2rem;
+        }
+        .col-2 {
+            // margin-top: 2rem;
+        }
+        .text-content {
+            text-align: center;
+            h6 {
+                font-size: 1.125em;
+                font-weight: 500;
+            }
+            h5 {
+                font-size: 1.25em;
+                margin-top: 1.875rem;
+            }
+            h2 {
+                font-size: 2.25em;
+            }
+            p {
+                font-size: 1em;
+                margin-top: 1.25rem;
+            }
+        }
+    }
+}
+
+// footer
+footer {
+    background: #333333;
+    color: white;
+    p {
+        padding: 2rem;
+        text-align: center;
+    }
+    .credit {
+        font-size: 0.8rem;
+        a {
+            text-underline-offset: .2em;
+            color: #a1a1a1;
+        }
+    }
+}
