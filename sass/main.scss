@@ -30,12 +30,17 @@ img {
 .btn {
     text-decoration: none;
     border: 1px solid #000;
-    padding: .7rem 2rem;
-    font-size: .875rem;
+    padding: .7em 2em;
+    font-size: .875em;
     color: #000;
     text-transform: uppercase;
     display: inline-block;
     margin: 2rem 0;
+}
+
+.max-center {
+    max-width: 90rem;
+    margin: 0 auto;
 }
 
 // Hero
@@ -69,7 +74,7 @@ body {
     }
 }
 
-@media (min-width:40em) {
+@media (min-width:30em) {
     .head {
         .head {
             font-size: 1rem;
@@ -77,32 +82,45 @@ body {
     }
 }
 
-.hero-bg {
-    max-width: 71.25rem;
-    margin: 0 auto;
-    background: url('../images/bg.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    padding: 10rem 0;
-}
-
 .hero {
+    .hero-bg {
+        margin: 0 auto;
+        background: url('../images/bg.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding: 10rem 0;
+    }
     .columns {
         padding: 2rem;
-        .img-container {}
-        .col-1 {}
+        .img-content {
+            max-height: inherit;
+            max-width: inherit;
+            img {
+                width: 100%;
+                object-fit: cover;
+                display: block;
+                max-height: inherit;
+                object-position: top center;
+            }
+        }
         .col-2 {
             background: white;
             padding: 2rem;
-            margin-top: 2rem;
         }
         .text-content {
+            text-align: center;
             h5 {
-                font-size: 1.25rem;
+                font-size: 1.25em;
                 line-height: 1.6;
                 margin-top: 1rem;
             }
+        }
+    }
+    .columns__1 {
+        margin-top: -10rem;
+        .col-2 {
+            margin-top: 2rem;
         }
     }
 }
@@ -111,7 +129,6 @@ body {
     .columns__2 {
         .col-1 {
             padding: 1rem;
-            border: none !important;
         }
         .col-2 {
             padding: 0;
@@ -126,6 +143,65 @@ body {
                 font-size: 1em;
                 line-height: 1.6;
                 margin-top: 1rem;
+            }
+            h5 {
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+@media (min-width:60em) {
+    .hero {
+        .hero-bg {
+            padding: 13rem 0;
+            background-position: bottom center;
+        }
+        .columns {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+        }
+        .columns__1 {
+            margin-top: -19em;
+            font-size: clamp(.8rem, 1.2vw, 1.2rem);
+            .col {
+                width: 24.281em;
+                max-height: 23.938em;
+            }
+            .col-2 {
+                display: grid;
+                place-items: center;
+                margin: 0;
+            }
+            .text-content {
+                align-items: center;
+            }
+        }
+        .columns__2 {
+            padding: 3rem 3rem;
+            .col-1 {
+                display: flex;
+                align-items: center;
+                width: 60%;
+            }
+            .text-content {
+                p {
+                    line-height: 1.6;
+                    max-width: 94%;
+                    margin: 2.25rem auto;
+                }
+            }
+            .col-2 {
+                width: 40%;
+            }
+            .image-content {
+                height: 100%;
+                width: 100%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
             }
         }
     }
@@ -174,9 +250,29 @@ body {
     }
 }
 
+@media (min-width:40em) {
+    .services {
+        .service-headings {
+            p {
+                max-width: 53%;
+                margin: 1.25rem auto;
+            }
+            h2 {
+                margin-top: 1.2rem;
+            }
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(21.458rem, 1fr));
+            gap: 2em;
+        }
+    }
+}
+
 // service2
 .service2 {
     .columns {
+        padding: 4rem 0;
         .content {
             padding: 1rem 1rem;
             .icon {
@@ -209,6 +305,36 @@ body {
     }
 }
 
+@media (min-width:60em) {
+    .service2 {
+        .columns {
+            display: flex;
+            padding: 4rem 0;
+            .col {
+                width: 33%;
+                max-height: 31.75rem;
+            }
+            .img-content {
+                height: 100%;
+                width: 100%;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            .col-1 {
+                display: flex;
+                align-items: center;
+            }
+            .col-3 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    }
+}
+
 // Recent Projects
 .recent-projects {
     .headings {
@@ -224,6 +350,13 @@ body {
             margin-top: 1.25rem;
         }
     }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        img {
+            width: 100%;
+        }
+    }
 }
 
 // map
@@ -234,7 +367,11 @@ body {
         .col-1 {
             padding: 2rem;
         }
-        .img-content {}
+        .img-content {
+            img {
+                width: 100%;
+            }
+        }
         .text-content {
             padding: 2rem;
             text-align: center;
@@ -250,6 +387,23 @@ body {
                 font-size: 1em;
                 line-height: 1.6;
                 margin-top: 1.875rem;
+            }
+        }
+    }
+}
+
+@media (min-width:60em) {
+    .map {
+        .columns {
+            display: flex;
+            padding: 4rem;
+            gap: 2em;
+            .col {
+                width: 50%;
+            }
+            .col-1 {
+                display: flex;
+                align-items: center;
             }
         }
     }
@@ -284,6 +438,18 @@ body {
                 font-size: 1em;
                 margin-top: 1.25rem;
             }
+        }
+    }
+}
+
+@media (min-width:40em) {
+    .contact {
+        .columns {
+            display: flex;
+            padding: 3rem;
+        }
+        .col {
+            width: 50%;
         }
     }
 }
